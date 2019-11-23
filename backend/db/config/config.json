@@ -7,10 +7,10 @@
     "dialect": "postgres"
   },
   "staging": {
-    "username": "todomaster",
-    "password": "RkRzf04yXyoh76QkEIHx",
-    "database": "todo-database",
-    "host": "todo-database.cvvxeydx7vm3.us-east-1.rds.amazonaws.com",
+    "username": "testtodo",
+    "password": "testtodo",
+    "host": "test-todo.cvvxeydx7vm3.us-east-1.rds.amazonaws.com",
+    "database": "testtodo",
     "port": "5432",
     "dialect": "postgres"
   },

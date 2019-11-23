@@ -2,9 +2,9 @@
   "name": "hemlane",
   "version": "1.0.0",
   "description": "Hemlane App",
-  "main": "y",
+  "main": "",
   "scripts": {
-    "start": "node ./backend/express/app.js"
+    "start": "NODE_ENV=staging node ./backend/express/app.js"
   },
   "repository": {
     "type": "git",

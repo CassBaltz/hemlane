@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const app = express();
 const db = require("../db/models/index");
 const server = require("../graphql/server");
