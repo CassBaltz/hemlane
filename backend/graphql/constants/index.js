@@ -1,0 +1,9 @@
+const TODO_STATUSES = {
+    TROUBLESHOOTING: "TROUBLESHOOTING",
+    WIP: "WIP",
+    COMPLETE: "COMPLETE"
+};
+
+module.exports = {
+    TODO_STATUSES
+};

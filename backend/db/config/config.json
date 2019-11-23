@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "cassbaltz",
+    "password": null,
+    "database": "hemlane",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "staging": {
+    "username": "todomaster",
+    "password": "RkRzf04yXyoh76QkEIHx",
+    "database": "todo-database",
+    "host": "todo-database.cvvxeydx7vm3.us-east-1.rds.amazonaws.com",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
