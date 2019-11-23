@@ -1,0 +1,19 @@
+{
+  "name": "hemlane",
+  "version": "1.0.0",
+  "description": "Hemlane App",
+  "main": "y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CassBaltz/hemlane.git"
+  },
+  "author": "Cass Baltz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CassBaltz/hemlane/issues"
+  },
+  "homepage": "https://github.com/CassBaltz/hemlane#readme"
+}
