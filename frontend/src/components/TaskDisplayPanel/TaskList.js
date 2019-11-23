@@ -66,11 +66,11 @@ const styles = {
     padding: "0 20px"
   },
   header: {
-    border: "2px solid #99e9f2",
     borderRadius: "4px",
     padding: "15px",
     marginBottom: "20px",
-    backgroundColor: "#f8f9fa"
+    backgroundColor: "#f8f9fa",
+    textAlign: "center"
   },
   listHeader: {
     height: "40px",

@@ -43,6 +43,9 @@ const Todo = ({id, title, status, description, classes, tasks, dispatch}) => {
                 id="todo-status-selector"
                 value={status}
                 onChange={sendUpdate}
+                classes={{
+                    selectMenu: classes.selectInput
+                }}
               >
                 <MenuItem value="ALL">ALL</MenuItem>
                 <MenuItem value="TROUBLESHOOTING">TROUBLESHOOTING</MenuItem>
@@ -80,6 +83,9 @@ const styles = {
   },
   select: {
     minWidth: "200px"
+  },
+  selectInput: {
+    paddingLeft: "8px"
   },
   actionFooter: {
     padding: "15px 0 0 0",

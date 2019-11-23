@@ -1,12 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
+import { withStyles } from "@material-ui/core/styles";
 
 import Select from "@material-ui/core/Select";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 
-const TodoStatusSelector = ({status, dispatch}) => {
+const TodoStatusSelector = ({ status, dispatch, classes }) => {
     const dispatchUpdate = e => {
         dispatch({type: "UPDATE_STATUS", payload: {status: e.target.value}});
     };
@@ -15,6 +16,9 @@ const TodoStatusSelector = ({status, dispatch}) => {
       <FormControl style={{width: "200px"}}>
         <InputLabel id="todo-status-selector-label">Filter Todos</InputLabel>
         <Select
+          classes={{
+             selectMenu: classes.select
+          }}
           labelId="todo-status-selector-label"
           id="todo-status-selector"
           value={status || "ALL"}
@@ -34,4 +38,10 @@ const mapStateToProps = ({view}) => {
     return {status: view.todoFilter};
 };
 
-export default connect(mapStateToProps)(TodoStatusSelector);
+const styles = {
+    select: {
+        paddingLeft: "8px"
+    }
+}
+
+export default withStyles(styles)(connect(mapStateToProps)(TodoStatusSelector));
