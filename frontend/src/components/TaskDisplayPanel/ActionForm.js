@@ -38,7 +38,7 @@ const ActionForm = ({TaskId, dispatch, classes}) => {
         setDescription("");
         setContactName("");
         setContactEmail("");
-        setShowForm("false");
+        setShowForm(false);
         dispatch({ type: "ADD_ACTION", payload: action });
       });
   };
