@@ -22,7 +22,7 @@ const getTasksByTodoId = async ({id}, _, {Task}) => {
 
 const createTodo = async (_, { todo }, { Todo }) => {
     try {
-        await Todo.create({ ...todo, status: TODO_STATUSES.TROUBLESHOOTING });
+        return await Todo.create({ ...todo, status: TODO_STATUSES.TROUBLESHOOTING });
     } catch (e) {
         console.log(e);
     }

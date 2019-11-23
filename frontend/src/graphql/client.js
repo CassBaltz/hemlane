@@ -1,6 +1,6 @@
 import ApolloClient from "apollo-boost";
 
 export default  new ApolloClient({
-    uri: "/graphql",
+    uri: 'http://localhost:4000/graphql',
 });
 

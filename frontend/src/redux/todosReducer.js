@@ -70,6 +70,8 @@ const updateAction = (state, action) => {
 
 export default (state = [], action) => {
     switch (action.type) {
+        case "ADD_TODO":
+            return [action.payload, ...state];
         case "SET_TODOS":
             return [...action.payload];
         case "UPDATE_TODO":
