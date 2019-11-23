@@ -72,6 +72,14 @@ export default (state = [], action) => {
     switch (action.type) {
         case "ADD_TODO":
             return [action.payload, ...state];
+        case "DELETE_TODO":
+            const deleteTodoArray = [];
+            state.forEach(todo => {
+                if (todo.id !== action.payload.id) {
+                    return deleteTodoArray.push(todo);
+                }
+            });
+            return deleteTodoArray;
         case "SET_TODOS":
             return [...action.payload];
         case "UPDATE_TODO":

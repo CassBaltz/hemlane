@@ -28,6 +28,17 @@ const createTodo = async (_, { todo }, { Todo }) => {
     }
 };
 
+const deleteTodo = async (_, { id }, { Todo }) => {
+    try {
+        const numberOfRows = await Todo.destroy({where: { id }});
+        if (numberOfRows > 0) {
+            return { id };
+        }
+    } catch(e) {
+        console.log(e);
+    }
+}
+
 const updateTodo = async (_, { todo }, { Todo }) => {
     const { id, status } = todo;
     try {
@@ -46,6 +57,7 @@ module.exports = {
     },
     Mutation: {
         createTodo,
-        updateTodo
+        updateTodo,
+        deleteTodo
     }
 };

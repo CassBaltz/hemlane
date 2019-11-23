@@ -56,6 +56,14 @@ const CREATE_TODO = gql`
     }
 `;
 
+const DELETE_TODO = gql`
+    mutation DELETE_TODO($id: ID!) {
+        deleteTodo(id: $id) {
+            id
+        }
+    }
+`;
+
 const CREATE_TASK = gql`
   mutation CREATE_TASK($task: CreateTaskInput!) {
     createTask(task: $task) {
@@ -112,6 +120,7 @@ const UPDATE_ACTION = gql`
 
 export {
   UPDATE_TODO,
+  DELETE_TODO,
   UPDATE_TASK,
   GET_TODOS,
   CREATE_TASK,

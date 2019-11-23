@@ -5,6 +5,8 @@ const defaultState = {
 
 export default (state = defaultState, action) => {
   switch (action.type) {
+    case 'DELETE_TODO':
+        return {...state, activeTodoId: null}
     case 'UPDATE_STATUS':
         return {...state, todoFilter: action.payload.status, activeTodoId: null};
     case 'UPDATE_STATUS_AND_TODO':

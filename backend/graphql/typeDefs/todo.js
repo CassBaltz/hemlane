@@ -17,6 +17,10 @@ const Todo = gql`
         tasks: [Task]
     }
 
+    type DeleteTodoResponse {
+        id: ID!
+    }
+
     input CreateTodoInput {
         title: String!
         description: String
@@ -28,8 +32,9 @@ const Todo = gql`
     }
 
     extend type Mutation {
-        createTodo(todo: CreateTodoInput!): Todo
-        updateTodo(todo: UpdateTodoInput!): Todo
+        createTodo(todo: CreateTodoInput!): Todo!
+        updateTodo(todo: UpdateTodoInput!): Todo!
+        deleteTodo(id: ID!): DeleteTodoResponse!
     }
 
     extend type Query {
