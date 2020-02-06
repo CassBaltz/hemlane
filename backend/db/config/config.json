@@ -7,10 +7,10 @@
     "dialect": "postgres"
   },
   "staging": {
-    "username": "testtodo",
-    "password": "testtodo",
-    "host": "test-todo.cvvxeydx7vm3.us-east-1.rds.amazonaws.com",
-    "database": "testtodo",
+    "username": "nehczqvqhpagpg",
+    "password": "f96a905aa57fb3a95c9a7971032dec8f3017a6f437c332623bd622ec051ea16c",
+    "host": "ec2-34-192-30-15.compute-1.amazonaws.com",
+    "database": "d957t1i8alrv9s",
     "port": "5432",
     "dialect": "postgres"
   },
