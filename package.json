@@ -19,6 +19,6 @@
   "homepage": "https://github.com/CassBaltz/hemlane#readme",
   "devDependencies": {},
   "dependencies": {
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   }
 }
